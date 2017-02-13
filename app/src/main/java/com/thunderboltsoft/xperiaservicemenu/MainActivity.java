@@ -12,27 +12,37 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.revmob.RevMob;
+import com.revmob.RevMobAdsListener;
+import com.revmob.ads.banner.RevMobBanner;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnOpenServiceMenu, btnManuallyOpenServiceMenu;
+    Button btnOpenServiceMenu, btnManuallyOpenServiceMenu, btnShortcutDiagnostics;
     SharedPreferences prefs;
     Boolean bShowInfoDialog;
     Intent intentOpenServiceMenu;
     Boolean bServiceMenuExists;
     TextView txtError, txtDisclaimer;
+
+    private RevMob revmob;
+    private RevMobBanner banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnOpenServiceMenu = (Button) findViewById(R.id.btnOpenServiceMenu);
         btnManuallyOpenServiceMenu = (Button) findViewById(R.id.btnManuallyOpenServiceMenu);
+        btnShortcutDiagnostics = (Button) findViewById(R.id.btnShortcutDiagnostics);
 
         createListeners();
 
@@ -67,18 +78,20 @@ public class MainActivity extends AppCompatActivity {
         if (bShowInfoDialog) {
             showInfoDialog();
         }
+
+        startRevMobSession();
     }
 
     public String getDeviceName() {
         String manufacturer = Build.MANUFACTURER;
         String model = Build.MODEL;
+
         if (model.startsWith(manufacturer)) {
             return " " + capitalize(model);
         } else {
             return " " + capitalize(manufacturer) + " " + model;
         }
     }
-
 
     private String capitalize(String s) {
         if (s == null || s.length() == 0) {
@@ -107,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.action_help:
                 Intent intent = new Intent();
-                intent.setClassName(this, "com.thunderboltsoft.xperiaservicemenu.AboutActivity"); // instead of HelpActivity, don't need it anymore
+                intent.setClassName(this, "com.thunderboltsoft.xperiaservicemenu.AboutActivity");
                 startActivity(intent);
 
                 return true;
@@ -169,6 +182,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "*#*#7378423#*#*", null)));
             }
         });
+
+        btnShortcutDiagnostics.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Settings.ACTION_DEVICE_INFO_SETTINGS));
+            }
+        });
     }
 
     private boolean setupStartServiceMenu() {
@@ -186,9 +206,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             txtError.setText("ERROR: Unable to find the service menu apk on this device.\n\nPossible explanations are:\n1. You are running a custom ROM\n2. You are attempting to run this app on a non Sony device\n3. You may have changed the device ID to a non Sony device ID inside build.prop\n\nAlternatively you can try to manually open the service menu by dialing the special code. Click on the following button to be redirected to the phone dialer with the code pre-entered.");
             txtError.setTextColor(Color.RED);
+
             btnOpenServiceMenu.setVisibility(View.GONE);
-            btnManuallyOpenServiceMenu.setVisibility(View.VISIBLE);
+            btnShortcutDiagnostics.setVisibility(View.GONE);
             txtDisclaimer.setVisibility(View.GONE);
+
+            btnManuallyOpenServiceMenu.setVisibility(View.VISIBLE);
+
             return false;
         }
     }
@@ -197,5 +221,50 @@ public class MainActivity extends AppCompatActivity {
         if (bServiceMenuExists) {
             startActivity(intentOpenServiceMenu);
         }
+    }
+
+    public void startRevMobSession() {
+        //RevMob's Start Session method:
+        revmob = RevMob.startWithListener(this, new RevMobAdsListener() {
+            @Override
+            public void onRevMobSessionStarted() {
+                loadBanner(); // Cache the banner once the session is started
+                Log.i("RevMob","Session Started");
+            }
+            @Override
+            public void onRevMobSessionNotStarted(String message) {
+                //If the session Fails to start, no ads can be displayed.
+                Log.i("RevMob","Session Failed to Start");
+            }
+        }, "");
+    }
+
+    public void loadBanner(){
+        banner = revmob.createBanner(this, new RevMobAdsListener(){
+            @Override
+            public void onRevMobAdReceived() {
+                showBanner();
+                Log.i("RevMob","Banner Ready to be Displayed"); //At this point, the banner is ready to be displayed.
+            }
+            @Override
+            public void onRevMobAdNotReceived(String message) {
+                Log.i("RevMob","Banner Not Failed to Load");
+            }
+            @Override
+            public void onRevMobAdDisplayed() {
+                Log.i("RevMob","Banner Displayed");
+            }
+        });
+    }
+
+    public void showBanner(){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                ViewGroup view = (ViewGroup) findViewById(R.id.revmob_ad);
+                view.addView(banner);
+                banner.show(); //This method must be called in order to display the ad.
+            }
+        });
     }
 }

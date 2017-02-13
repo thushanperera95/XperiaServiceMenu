@@ -11,7 +11,7 @@
             android:title="@string/pref_app_rate">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://github.com/kaozgamer/GradeCalculator" />
+                android:data="https://play.google.com/store/apps/details?id=com.thunderboltsoft.xperiaservicemenu" />
         </Preference>
 
         <Preference
@@ -19,7 +19,7 @@
             android:title="@string/pref_app_source_code">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://github.com/kaozgamer/GradeCalculator" />
+                android:data="https://github.com/kaozgamer/XperiaServiceMenu" />
         </Preference>
 
         <Preference
