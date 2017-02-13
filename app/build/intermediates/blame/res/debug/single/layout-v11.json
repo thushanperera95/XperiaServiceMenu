@@ -4,6 +4,10 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout-v11\\notification_media_cancel_action.xml"
     },
     {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\preference_dropdown.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout-v11\\preference_dropdown.xml"
+    },
+    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\toolbar.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\src\\main\\res\\layout-v11\\toolbar.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\preference.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout-v11\\preference.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_app">
+        <Preference
+            android:summary="@string/pref_app_description_summary"
+            android:title="@string/pref_app_description" />
+
+        <Preference
+            android:summary="@string/pref_app_rate_summary"
+            android:title="@string/pref_app_rate">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/kaozgamer/GradeCalculator" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/view_source_code_on_github"
+            android:title="@string/pref_app_source_code">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/kaozgamer/GradeCalculator" />
+        </Preference>
+
+        <Preference
+            android:summary="@string/pref_app_version_summary"
+            android:title="@string/pref_app_version" />
+    </PreferenceCategory>
+</PreferenceScreen>

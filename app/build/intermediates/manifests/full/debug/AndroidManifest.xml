@@ -5,7 +5,7 @@
     android:versionName="1.0.5" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="11"
         android:targetSdkVersion="25" />
 
     <application
@@ -24,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.thunderboltsoft.xperiaservicemenu.AboutActivity"
+            android:label="About"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.karumi.dexter.DexterActivity"
             android:launchMode="singleTask"

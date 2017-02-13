@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:3:5-52
 		INJECTED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml
@@ -16,7 +16,8 @@ ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifes
 	xmlns:android
 		ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:7:5-23:19
+ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:7:5-27:19
+MERGED from [com.android.support:preference-v7:25.1.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\preference-v7\25.1.1\AndroidManifest.xml:9:5-20
 MERGED from [com.karumi:dexter:2.3.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:26:5-31:19
 MERGED from [com.android.support:design:25.1.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.1.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\AndroidManifest.xml:22:5-20
@@ -57,8 +58,17 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.thunderboltsoft.xperiaservicemenu.AboutActivity
+ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:23:9-26:52
+	android:screenOrientation
+		ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:26:13-49
+	android:label
+		ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:25:13-34
+	android:name
+		ADDED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml:24:13-42
 uses-sdk
 INJECTED from D:\Development\Projects\XperiaServiceMenu\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:preference-v7:25.1.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\preference-v7\25.1.1\AndroidManifest.xml:7:5-43
 MERGED from [com.karumi:dexter:2.3.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:design:25.1.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:recyclerview-v7:25.1.1] D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\AndroidManifest.xml:20:5-43

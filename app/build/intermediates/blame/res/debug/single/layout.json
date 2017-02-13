@@ -20,12 +20,16 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media.xml"
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_empty_toolbar.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\src\\main\\res\\layout\\fragment_empty_toolbar.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_widget_seekbar.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_widget_seekbar.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
@@ -36,8 +40,8 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_lines.xml"
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_widget_checkbox.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_widget_checkbox.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
@@ -46,6 +50,14 @@
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_dialog_edittext.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_dialog_edittext.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
@@ -68,6 +80,10 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_information.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_information.xml"
+    },
+    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
@@ -88,10 +104,6 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_text_input_password_icon.xml"
     },
@@ -100,8 +112,8 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_dropdown.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_dropdown.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
@@ -148,12 +160,12 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_layout_snackbar.xml"
     },
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
@@ -176,6 +188,10 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_list_fragment.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_list_fragment.xml"
+    },
+    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_action.xml"
     },
@@ -196,20 +212,20 @@
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_media_cancel_action.xml"
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_widget_switch_compat.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_widget_switch_compat.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
@@ -222,6 +238,10 @@
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_recyclerview.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_recyclerview.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
@@ -242,5 +262,13 @@
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_category.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\25.1.1\\res\\layout\\preference_category.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_info.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\src\\main\\res\\layout\\dialog_info.xml"
     }
 ]

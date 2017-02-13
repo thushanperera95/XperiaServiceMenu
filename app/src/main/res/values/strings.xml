@@ -2,11 +2,37 @@
 <resources>
 
     <string name="app_name">Xperia Service Menu</string>
-    <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="open_button">Open Service Menu</string>
     <string name="description">This app will open the service menu designed for Sony Xperia devices. The service menu is used to test the various components of the device, retrieve device information and retrieve configuration information.</string>
     <string name="warning">This may NOT work on devices with custom ROMs. </string>
+    <string name="action_info">Info</string>
 
+    <!-- HelpActivity.java -->
+    <string name="help_activity_email_bug_report_subject">Bug Report: Grade Calculator</string>
+    <string name="help_activity_email_bug_report_text">What can I help you with?\n</string>
+    <string name="help_activity_email_feedback_subject">Feedback: Grade Calculator</string>
+    <string name="help_activity_email_feedback_text">What can I help you with?\n</string>
+    <string name="email_intent_chooser">Select email application</string>
+
+    <!-- menu_help.xml -->
+    <string name="action_report_a_problem">Report a Problem</string>
+    <string name="action_give_feedback">Give Feedback</string>
+    <string name="action_about">About</string>
+
+    <!-- menu_main.xml -->
+    <string name="action_help_and_feedback">About &amp; Feedback</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- pref_help.xml -->
+    <string name="pref_app">App</string>
+    <string name="pref_app_description">Description</string>
+    <string name="pref_app_description_summary">App that allows students to calculate their current grade in a unit, and how much they need in the final assessment in order to achieve their desired grade.</string>
+    <string name="pref_app_rate">Rate This App</string>
+    <string name="pref_app_rate_summary">Go to Google Play Store</string>
+    <string name="pref_app_source_code">Source Code</string>
+    <string name="pref_app_version">Version</string>
+    <string name="pref_app_version_summary">1.0.0</string>
+    <string name="view_source_code_on_github">View source code on Github</string>
 </resources>

@@ -35,12 +35,14 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_below="@id/textView2"/>
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/open_button"
-        android:layout_below="@id/textView1"/>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_button"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp" />
 
     </RelativeLayout>
 

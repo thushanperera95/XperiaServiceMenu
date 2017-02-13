@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_help_report_problem"
+        android:icon="@drawable/ic_bug_report_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/action_report_a_problem"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_help_give_feedback"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:orderInCategory="2"
+        android:title="@string/action_give_feedback"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_help_about"
+        android:orderInCategory="3"
+        android:title="@string/action_about"
+        app:showAsAction="never"
+        android:visible="false" />
+</menu>

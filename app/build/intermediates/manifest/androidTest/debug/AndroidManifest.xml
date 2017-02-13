@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.thunderboltsoft.xperiaservicemenu.test">
 
-    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="25" />
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="25" />
 
     <application>
         <uses-library android:name="android.test.runner" />

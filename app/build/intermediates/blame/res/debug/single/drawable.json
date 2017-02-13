@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -74,10 +74,6 @@
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\drawable\\design_ic_visibility.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
