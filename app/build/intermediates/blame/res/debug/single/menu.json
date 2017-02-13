@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\menu\\second.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\src\\main\\res\\menu\\second.xml"
+    }
+]

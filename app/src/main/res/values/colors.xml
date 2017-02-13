@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#a6242d</color>
+    <color name="primary_dark">#911f27</color>
+    <color name="ripple">#F06292</color>
+    <color name="colorPrimary">#a6242d</color>
+    <color name="colorPrimaryDark">#911f27</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#125688</color>
+    <color name="colorAccent">#c8e8ff</color>
+</resources>
