@@ -5,10 +5,12 @@ import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,7 +24,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b, exitB;
+    Button b;
+    SharedPreferences prefs;
+    Boolean bShowInfoDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +39,17 @@ public class MainActivity extends AppCompatActivity {
 
         b = (Button) findViewById(R.id.button1);
 
+
+
         createListeners();
 
-        showInfoDialog();
+
+        prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        bShowInfoDialog = prefs.getBoolean("showDialog", true);
+
+        if (bShowInfoDialog) {
+            showInfoDialog();
+        }
     }
 
     @Override
@@ -84,6 +96,15 @@ public class MainActivity extends AppCompatActivity {
                         // OK, go back to Main menu
                     }
                 });
+
+        builder.setNegativeButton("Don't Show Again",
+                new android.content.DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int arg1) {
+                        // OK, never show this again
+                        prefs.edit().putBoolean("showDialog", false).apply();
+                    }
+                });
+
 
         // If the user clicks on anywhere outside the dialog box, it will return
         // the user to where the user was
