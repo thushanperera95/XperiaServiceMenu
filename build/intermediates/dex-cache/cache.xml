@@ -7,17 +7,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="e41c038c437e14d6789dde078d0736a248083c5e">
+        sha1="6965c76f3f1e0accd2846701fd0010e447bc7680">
         <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_33ebcad5dd99c32c210638542f8153867cedfb45\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_dd7b94690ed4a62c08c54ccff330194833577115\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -36,14 +27,6 @@
         revision="24.0.0"
         sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
         <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_34bebe24eabf7c0d6a0e031b830b09eca61411eb\classes.dex" />
-    </item>
-    <item
-        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="3f8fe3c5035c003058846d644d98ca399d405e5e">
-        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.karumi-dexter-2.3.1_fa349f862b0160a6ee37546e3664875d6787e3b1\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -70,33 +53,6 @@
         revision="24.0.0"
         sha1="e50517d6a60644b6c5b5b6a52331348f69d600fb">
         <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_943cfed1d6c910d60f06cb2ddb40b72ca9e74b3d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_0e0167c80dba2c0757488c79d3eae3a6a7aac22e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\preference-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="9078293943d0cf69b4111b7c141456b522a463c1">
-        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v7-25.1.1_81a683011c21e0a49dd20b5cc59bbb7e503a6057\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_75b6e043706d102035af7607f15a4296f4793d03\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -127,6 +83,68 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5e0a03ef004b42f42da2bb31818f5c4e0ae37122">
+        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_943cfed1d6c910d60f06cb2ddb40b72ca9e74b3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_bbf3726cfe09829ae55c1f5e5c8656c0aa3037d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_dd7b94690ed4a62c08c54ccff330194833577115\classes.dex" />
+    </item>
+    <item
+        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.karumi\dexter\2.3.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3f8fe3c5035c003058846d644d98ca399d405e5e">
+        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.karumi-dexter-2.3.1_fa349f862b0160a6ee37546e3664875d6787e3b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_0e0167c80dba2c0757488c79d3eae3a6a7aac22e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_75b6e043706d102035af7607f15a4296f4793d03\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\preference-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="9078293943d0cf69b4111b7c141456b522a463c1">
+        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-preference-v7-25.1.1_81a683011c21e0a49dd20b5cc59bbb7e503a6057\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -145,30 +163,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="07b085e54b4d281c7a0cf86c98d60135d3faf00e">
-        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_943cfed1d6c910d60f06cb2ddb40b72ca9e74b3d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
         sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
         <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.1_ea1d98e08e8a4eb9dc04ce9fe4676b4e1f4727d2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_bbf3726cfe09829ae55c1f5e5c8656c0aa3037d6\classes.dex" />
     </item>
     <item
         jar="D:\Development\Projects\XperiaServiceMenu\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"

@@ -5,9 +5,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="open_button">Open Service Menu</string>
-    <string name="description">This app will open the service menu designed for Sony Xperia devices. The service menu is used to test the various components of the device, retrieve device information and retrieve configuration information.</string>
-    <string name="warning">This may NOT work on devices with custom ROMs. </string>
+    <string name="manually_open_button">Manually Open Service Menu</string>
+    <string name="description">This app will open the built-in service menu for Sony Xperia devices.\n\nThe service menu is used to test the various components of the device, retrieve device information and retrieve/set configuration parameters.\n\nThis may NOT work on devices with custom ROMs.</string>
     <string name="action_info">Info</string>
+    <string name="device_info">Device:</string>
+    <string name="device_info_name" />
+    <string name="device_info_name_error">ERR: Unable to get device model name</string>
 
     <!-- HelpActivity.java -->
     <string name="help_activity_email_bug_report_subject">Bug Report: Grade Calculator</string>
@@ -35,4 +38,5 @@
     <string name="pref_app_version">Version</string>
     <string name="pref_app_version_summary">1.0.0</string>
     <string name="view_source_code_on_github">View source code on Github</string>
+    <string name="disclaimer">Do not use this app if you are unsure of what you are doing. ThunderboltSoft will not be responsible for any damage that may occur to your phone as a result of improper use of the service menu.</string>
 </resources>

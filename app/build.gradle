@@ -5,7 +5,7 @@ android {
     buildToolsVersion '24.0.0'
     defaultConfig {
         applicationId "com.thunderboltsoft.xperiaservicemenu"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 25
     }
     buildTypes {
