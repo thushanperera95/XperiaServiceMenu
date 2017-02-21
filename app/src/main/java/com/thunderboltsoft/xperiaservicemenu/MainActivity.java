@@ -17,7 +17,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,15 +31,20 @@ import com.revmob.ads.banner.RevMobBanner;
 
 import java.util.List;
 
+/**
+ * The MainActivity of the app.
+ *
+ * First checks the device for the Xperia service menu app and then allows user to open it. If not found, user is given option to manually open the service menu.
+ *
+ * @author Thushan Perera
+ */
 public class MainActivity extends AppCompatActivity {
 
-    Button btnOpenServiceMenu, btnManuallyOpenServiceMenu, btnShortcutDiagnostics;
-    SharedPreferences prefs;
-    Boolean bShowInfoDialog;
-    Intent intentOpenServiceMenu;
-    Boolean bServiceMenuExists;
-    TextView txtError, txtDisclaimer;
-
+    private Button btnOpenServiceMenu, btnManuallyOpenServiceMenu, btnShortcutDiagnostics;
+    private SharedPreferences prefs;
+    private Intent intOpenServiceMenu;
+    private Boolean bServiceMenuExists;
+    private TextView txtError, txtDisclaimer;
     private RevMob revmob;
     private RevMobBanner banner;
 
@@ -48,41 +52,52 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /* Get references to the views */
+        btnOpenServiceMenu = (Button) findViewById(R.id.btnOpenServiceMenu);
+        btnManuallyOpenServiceMenu = (Button) findViewById(R.id.btnManuallyOpenServiceMenu);
+        btnShortcutDiagnostics = (Button) findViewById(R.id.btnShortcutDiagnostics);
+        txtError = (TextView) findViewById(R.id.error);
+        txtDisclaimer = (TextView) findViewById(R.id.disclaimer_text);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        TextView txtDeviceInfoName = (TextView) findViewById(R.id.txtDeviceInfoName);
+
+        /* Setup toolbar */
         if (toolbar != null) {
             setSupportActionBar(toolbar);
         }
 
-        btnOpenServiceMenu = (Button) findViewById(R.id.btnOpenServiceMenu);
-        btnManuallyOpenServiceMenu = (Button) findViewById(R.id.btnManuallyOpenServiceMenu);
-        btnShortcutDiagnostics = (Button) findViewById(R.id.btnShortcutDiagnostics);
-
+        /* Create listeners for the buttons */
         createListeners();
 
-        TextView txtDeviceInfoName = (TextView) findViewById(R.id.txtDeviceInfoName);
-        txtError = (TextView) findViewById(R.id.error);
-        txtDisclaimer = (TextView) findViewById(R.id.disclaimer_text);
+        /* Get and display the display manufacturer and model number */
         String deviceInfoName = getDeviceName();
-
         if (deviceInfoName.equals("")) {
             txtDeviceInfoName.setText(R.string.device_info_name_error);
         } else {
             txtDeviceInfoName.setText(getDeviceName());
         }
 
+        /* Perform search for the service menu apk */
         bServiceMenuExists = setupStartServiceMenu();
 
+        /* Store the user preference for the how-to dialog box (show again or not) */
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        bShowInfoDialog = prefs.getBoolean("showDialog", true);
-
+        Boolean bShowInfoDialog = prefs.getBoolean("showDialog", true);
         if (bShowInfoDialog) {
             showInfoDialog();
         }
 
+        /* Start the ad sessions */
         startRevMobSession();
     }
 
-    public String getDeviceName() {
+    /**
+     * Gets the device manufacturer and model.
+     *
+     * @return formatted string containing manufacturer and model.
+     */
+    private String getDeviceName() {
         String manufacturer = Build.MANUFACTURER;
         String model = Build.MODEL;
 
@@ -93,6 +108,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Capitalize the first letter of a string.
+     *
+     * @param s string to capitalize
+     * @return string with the first letter capitalized
+     */
     private String capitalize(String s) {
         if (s == null || s.length() == 0) {
             return "";
@@ -115,14 +136,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_info:
+            case R.id.action_info: // User clicks on how-to button on toolbar
                 showInfoDialog();
                 return true;
-            case R.id.action_help:
+            case R.id.action_help: // User clicks on "About & Feedback" button on toolbar
                 Intent intent = new Intent();
                 intent.setClassName(this, "com.thunderboltsoft.xperiaservicemenu.AboutActivity");
                 startActivity(intent);
-
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -130,19 +150,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Opens the "How to use" dialog box
+     * Opens the "How to use" dialog box.
      */
-    public void showInfoDialog() {
+    private void showInfoDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
         builder.setTitle("Info");
 
         // Sets the view of the dialog box
-        builder.setView(LayoutInflater.from(this).inflate(R.layout.dialog_info,
-                null));
+        builder.setView(View.inflate(this, R.layout.dialog_info, null));
 
-        // Ads a "OK" button to close the dialog box and return to where the
-        // user was
+        // Ads a "OK" button to close the dialog box
         builder.setPositiveButton("OK",
                 new android.content.DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int arg1) {
@@ -158,31 +175,35 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
-
-        // If the user clicks on anywhere outside the dialog box, it will return
-        // the user to where the user was
+        // If the user clicks on anywhere outside the dialog box, it will close the dialog box without doing anything
         builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
             public void onCancel(DialogInterface dialog) {
                 // OK, go back to Main menu
             }
         });
-
         builder.show();
     }
 
+    /**
+     * Creates the listeners for all the buttons i nthe view.
+     */
     private void createListeners() {
+
+        // Listener for the open service menu button
         btnOpenServiceMenu.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 startServiceMenu();
             }
         });
 
+        // Listener for the open service menu manually button
         btnManuallyOpenServiceMenu.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", "*#*#7378423#*#*", null)));
             }
         });
 
+        // Listener for the shortcut to diagnostics button
         btnShortcutDiagnostics.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -191,73 +212,96 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Finds the service menu app on the device otherwise displays an error message and allows user to manually open it.
+     *
+     * @return returns true if the service menu app was found, otherwise false.
+     */
     private boolean setupStartServiceMenu() {
-        intentOpenServiceMenu = new Intent("android.intent.action.MAIN");
-        intentOpenServiceMenu.setComponent(ComponentName.unflattenFromString("com.sonyericsson.android.servicemenu/com.sonyericsson.android.servicemenu.ServiceMainMenu"));
+        // Intent to open the service menu app
+        intOpenServiceMenu = new Intent("android.intent.action.MAIN");
+        intOpenServiceMenu.setComponent(ComponentName.unflattenFromString("com.sonyericsson.android.servicemenu/com.sonyericsson.android.servicemenu.ServiceMainMenu"));
+        intOpenServiceMenu.addCategory("android.intent.category.LAUNCHER");
 
-        intentOpenServiceMenu.addCategory("android.intent.category.LAUNCHER");
-
+        // Checks the list of apps on the device for the service menu
         PackageManager packageManager = getPackageManager();
-        List<ResolveInfo> activities = packageManager.queryIntentActivities(intentOpenServiceMenu, 0);
+        List<ResolveInfo> activities = packageManager.queryIntentActivities(intOpenServiceMenu, 0);
         boolean isIntentSafe = activities.size() > 0;
 
-        if (isIntentSafe) {
+        if (isIntentSafe) { // Found the service menu app
             return true;
-        } else {
+        } else { // Cannot find the service menu app
             txtError.setText("ERROR: Unable to find the service menu apk on this device.\n\nPossible explanations are:\n1. You are running a custom ROM\n2. You are attempting to run this app on a non Sony device\n3. You may have changed the device ID to a non Sony device ID inside build.prop\n\nAlternatively you can try to manually open the service menu by dialing the special code. Click on the following button to be redirected to the phone dialer with the code pre-entered.");
             txtError.setTextColor(Color.RED);
 
+            // Hides button related to opening service menu, disclaimer and shortcut to diagnostics
             btnOpenServiceMenu.setVisibility(View.GONE);
             btnShortcutDiagnostics.setVisibility(View.GONE);
             txtDisclaimer.setVisibility(View.GONE);
 
+            // Shows the button to manually open the service menu via code in the phone dialer
             btnManuallyOpenServiceMenu.setVisibility(View.VISIBLE);
 
             return false;
         }
     }
 
+    /**
+     * Opens the service menu app.
+     */
     private void startServiceMenu() {
         if (bServiceMenuExists) {
-            startActivity(intentOpenServiceMenu);
+            startActivity(intOpenServiceMenu);
         }
     }
 
-    public void startRevMobSession() {
+    /**
+     * Starts the Revmob session with the app ad ID.
+     */
+    private void startRevMobSession() {
         //RevMob's Start Session method:
         revmob = RevMob.startWithListener(this, new RevMobAdsListener() {
             @Override
             public void onRevMobSessionStarted() {
                 loadBanner(); // Cache the banner once the session is started
-                Log.i("RevMob","Session Started");
+                Log.i("RevMob", "Session Started");
             }
+
             @Override
             public void onRevMobSessionNotStarted(String message) {
                 //If the session Fails to start, no ads can be displayed.
-                Log.i("RevMob","Session Failed to Start");
+                Log.i("RevMob", "Session Failed to Start");
             }
-        }, "");
+        }, "58a172e4392e24746f5a849a");
     }
 
-    public void loadBanner(){
-        banner = revmob.createBanner(this, new RevMobAdsListener(){
+    /**
+     * Downloads and loads the ad banner.
+     */
+    private void loadBanner() {
+        banner = revmob.createBanner(this, new RevMobAdsListener() {
             @Override
             public void onRevMobAdReceived() {
                 showBanner();
-                Log.i("RevMob","Banner Ready to be Displayed"); //At this point, the banner is ready to be displayed.
+                Log.i("RevMob", "Banner Ready to be Displayed"); //At this point, the banner is ready to be displayed.
             }
+
             @Override
             public void onRevMobAdNotReceived(String message) {
-                Log.i("RevMob","Banner Not Failed to Load");
+                Log.i("RevMob", "Banner Not Failed to Load");
             }
+
             @Override
             public void onRevMobAdDisplayed() {
-                Log.i("RevMob","Banner Displayed");
+                Log.i("RevMob", "Banner Displayed");
             }
         });
     }
 
-    public void showBanner(){
+    /**
+     * Displays the loaded ad banner onto the view.
+     */
+    private void showBanner() {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
