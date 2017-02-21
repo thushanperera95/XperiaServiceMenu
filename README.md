@@ -33,4 +33,4 @@ These are the areas of the app that needs more work. If you can see any improvem
 Please ensure that any code that you contribute, conforms to the coding standard defined <a href="https://source.android.com/source/code-style.html">here</a>.
 
 ## License
-Find My Phone is licensed under the <a href="https://raw.githubusercontent.com/kaozgamer/XperiaServiceMenu/new/master/LICENSE">MIT License</a>.
+Find My Phone is licensed under the <a href="https://github.com/kaozgamer/XperiaServiceMenu/blob/master/LICENSE">MIT License</a>.
