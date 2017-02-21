@@ -13,6 +13,7 @@ import android.view.View;
  * About Activity for the About Activity fragment.
  *
  * @author Thushan Perera
+ * @version 4
  */
 public class AboutActivity extends AppCompatActivity {
 

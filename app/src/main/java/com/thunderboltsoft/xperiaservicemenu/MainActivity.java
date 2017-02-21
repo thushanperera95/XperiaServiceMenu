@@ -33,19 +33,62 @@ import java.util.List;
 
 /**
  * The MainActivity of the app.
- *
+ * <p>
  * First checks the device for the Xperia service menu app and then allows user to open it. If not found, user is given option to manually open the service menu.
  *
  * @author Thushan Perera
+ * @version 4
  */
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnOpenServiceMenu, btnManuallyOpenServiceMenu, btnShortcutDiagnostics;
+    /**
+     * Holds a reference to the open service menu button.
+     */
+    private Button btnOpenServiceMenu;
+
+    /**
+     * Holds a reference to the manually open service menu button.
+     */
+    private Button btnManuallyOpenServiceMenu;
+
+    /**
+     * Holds a reference to the shortcut to diagnostics button.
+     */
+    private Button btnShortcutDiagnostics;
+
+    /**
+     * Holds a reference to the SharedPreferences objects where info related to app is stored in between app launches.
+     */
     private SharedPreferences prefs;
+
+    /**
+     * Holds reference to the intent that is used to open the service menu.
+     */
     private Intent intOpenServiceMenu;
+
+    /**
+     * The boolean indicating if the service menu app exists on the device.
+     */
     private Boolean bServiceMenuExists;
-    private TextView txtError, txtDisclaimer;
+
+    /**
+     * Holds a reference to the TextView that is responsible for displaying any error messages.
+     */
+    private TextView txtError;
+
+    /**
+     * Holds a reference to the TextView that is used to display the disclaimer.
+     */
+    private TextView txtDisclaimer;
+
+    /**
+     * Reference to the main Revmob object.
+     */
     private RevMob revmob;
+
+    /**
+     * Reference to the Revmob ad banner.
+     */
     private RevMobBanner banner;
 
     @Override
