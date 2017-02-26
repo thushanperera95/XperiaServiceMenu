@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.action_help: // User clicks on "About & Feedback" button on toolbar
                 Intent intent = new Intent();
-                intent.setClassName(this, "com.thunderboltsoft.xperiaservicemenu.AboutActivity");
+                intent.setClassName(this, "com.kaozgamer.easyaboutandfeedback.AboutActivity");
                 startActivity(intent);
                 return true;
             default:

@@ -16,6 +16,7 @@
         android:fullBackupContent="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.thunderboltsoft.xperiaservicemenu.MainActivity"
@@ -28,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.thunderboltsoft.xperiaservicemenu.AboutActivity"
+            android:name="com.kaozgamer.easyaboutandfeedback.AboutActivity"
             android:label="About"
             android:screenOrientation="portrait" />
         <activity

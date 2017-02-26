@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Easy About and Feedback</string>
+    <!-- pref_help.xml -->
+    <string name="pref_app">App</string>
+    <string name="pref_app_description">Description</string>
+    <string name="pref_app_description_summary">App that allows you to easily open your Xperia\'s service menu with a single tap instead of entering a long combination of numbers. The service menu allows you to view device configuration, software configuration and to perform tests of the various features available on your device.</string>
+    <string name="pref_app_rate">Rate This App</string>
+    <string name="pref_app_rate_summary">Go to Google Play Store</string>
+    <string name="pref_app_source_code">Source Code</string>
+    <string name="pref_app_version">Version</string>
+    <string name="pref_app_version_summary">2.0.0</string>
+    <string name="view_source_code_on_github">View source code on Github</string>
+
+    <!-- HelpActivity.java -->
+    <string name="help_activity_email_bug_report_subject">Bug Report: Grade Calculator</string>
+    <string name="help_activity_email_bug_report_text">What can I help you with?\n</string>
+    <string name="help_activity_email_feedback_subject">Feedback: Grade Calculator</string>
+    <string name="help_activity_email_feedback_text">What can I help you with?\n</string>
+    <string name="email_intent_chooser">Select email application</string>
+
+    <!-- menu_help.xml -->
+    <string name="action_report_a_problem">Report a Problem</string>
+    <string name="action_give_feedback">Give Feedback</string>
+    <string name="action_about">About</string>
+</resources>

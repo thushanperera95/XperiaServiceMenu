@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutActivity"
+            android:name="com.kaozgamer.easyaboutandfeedback.AboutActivity"
             android:label="About"
             android:screenOrientation="portrait" />
     </application>

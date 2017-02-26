@@ -1,18 +1,10 @@
 [
     {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_feedback_black_24dp.png",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_feedback_black_24dp.png"
-    },
-    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_info_outline.png",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_info_outline.png"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
         "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_bug_report_black_24dp.png",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_bug_report_black_24dp.png"
     }
 ]

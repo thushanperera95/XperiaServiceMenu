@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/XperiaServiceMenu.iml" filepath="$PROJECT_DIR$/XperiaServiceMenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easyaboutandfeedback/easyaboutandfeedback.iml" filepath="$PROJECT_DIR$/easyaboutandfeedback/easyaboutandfeedback.iml" />
       <module fileurl="file://$PROJECT_DIR$/revmob/revmob.iml" filepath="$PROJECT_DIR$/revmob/revmob.iml" />
     </modules>
   </component>

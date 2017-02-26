@@ -1,10 +1,18 @@
 [
     {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_bug_report_black_24dp.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\XperiaServiceMenu\\easyaboutandfeedback\\unspecified\\res\\drawable-anydpi-v21\\ic_bug_report_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_feedback_black_24dp.xml",
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\XperiaServiceMenu\\easyaboutandfeedback\\unspecified\\res\\drawable-anydpi-v21\\ic_feedback_black_24dp.xml"
+    },
+    {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.2.0\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
         "merged": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
-        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.1\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+        "source": "D:\\Development\\Projects\\XperiaServiceMenu\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.2.0\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     }
 ]
