@@ -19,12 +19,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:preference-v7:25.2.0'
-    compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.android.support:design:25.2.0'
-    compile 'com.android.support:support-v4:25.2.0'
-    compile 'com.karumi:dexter:2.3.1'
-    compile project(':revmob')
-    compile project(':easyaboutandfeedback')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:preference-v7:25.2.0'
+    implementation 'com.android.support:appcompat-v7:25.2.0'
+    implementation 'com.android.support:design:25.2.0'
+    implementation 'com.android.support:support-v4:25.2.0'
+    implementation 'com.karumi:dexter:2.3.1'
+    implementation project(':revmob')
+    implementation project(':easyaboutandfeedback')
 }
